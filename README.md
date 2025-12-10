@@ -31,3 +31,4 @@ Next steps (optional)
 - Add history of operations
 - Add more natural language parsing and error messages
 - Persist logs or add authentication if you plan to deploy
+<img width="1811" height="850" alt="image" src="https://github.com/user-attachments/assets/96e69585-bf2e-4681-831a-e9a484f251db" />
