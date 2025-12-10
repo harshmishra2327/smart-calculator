@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Advanced Calculator - Voice & Manual</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <h1>🧮 Advanced Calculator</h1>
+          <p>Voice & Manual Input • Real-time Evaluation</p>
+        </div>
+      </header>
+
+      <main class="container">
+        <!-- Left: Calculator Keypad -->
+        <section class="calculator-section">
+          <div class="calculator">
+            <div id="display" class="display">
+              <span class="display-value">0</span>
+            </div>
+
+            <div class="keys-grid">
+              <button class="key num" data-value="7">7</button>
+              <button class="key num" data-value="8">8</button>
+              <button class="key num" data-value="9">9</button>
+              <button class="key op" data-value="/">÷</button>
+
+              <button class="key num" data-value="4">4</button>
+              <button class="key num" data-value="5">5</button>
+              <button class="key num" data-value="6">6</button>
+              <button class="key op" data-value="*">×</button>
+
+              <button class="key num" data-value="1">1</button>
+              <button class="key num" data-value="2">2</button>
+              <button class="key num" data-value="3">3</button>
+              <button class="key op" data-value="-">−</button>
+
+              <button class="key num" data-value="0">0</button>
+              <button class="key num" data-value=".">.</button>
+              <button id="clear" class="key clear-btn">C</button>
+              <button class="key op" data-value="+">+</button>
+
+              <button id="eval" class="key eval-btn">=</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right: Input & Controls -->
+        <section class="control-section">
+          <!-- Input Area -->
+          <div class="input-area">
+            <h3>Expression Input</h3>
+            <input id="expr" class="expr-input" placeholder="5 + 3 or add 5 and 3 or square root of 81" />
+            <div class="input-buttons">
+              <button id="send" class="btn btn-primary">Calculate</button>
+              <button id="voice" class="btn btn-voice">🎤 Voice</button>
+              <button id="copy" class="btn btn-copy" title="Copy result">📋 Copy</button>
+            </div>
+          </div>
+
+          <!-- Result Display -->
+          <div class="result-area">
+            <h3>Result</h3>
+            <div id="result" class="result-display"></div>
+          </div>
+
+          <!-- History -->
+          <div class="history-section">
+            <div class="history-header">
+              <h3>History</h3>
+              <button id="clearHistory" class="btn btn-small btn-danger">Clear</button>
+            </div>
+            <ul id="historyList" class="history-list"></ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="notes">Uses browser speech recognition & synthesis (Chrome/Edge recommended).</footer>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>
